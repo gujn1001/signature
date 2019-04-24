@@ -34,7 +34,7 @@ class ServiceProvider extends LaravelServiceProvider
 
     protected function setupConfig()
     {
-        $source = realpath(__DIR__ . 'config.php');
+        $source = realpath(__DIR__ . '/config.php');
         if ($this->app instanceof LaravelApplication) {
             if ($this->app->runningInConsole()) {
                 $this->publishes([
